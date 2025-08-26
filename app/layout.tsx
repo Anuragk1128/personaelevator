@@ -6,7 +6,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
-  title: "ElevateMax Lift Services - Professional Lift Installation & Maintenance",
+  title: "Persona Elevator - Professional Lift Installation & Maintenance",
   description:
     "Professional lift installation, maintenance, and repair services. Trusted by businesses across the region for reliable elevator solutions.",
   generator: "v0.app",
