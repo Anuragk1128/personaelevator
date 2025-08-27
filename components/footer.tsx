@@ -31,22 +31,22 @@ export function Footer() {
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                <Link href="/about" className="text-primary-foreground/80 hover:text-cyan-600 transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                <Link href="/services" className="text-primary-foreground/80 hover:text-cyan-600 transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/clients" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                <Link href="/clients" className="text-primary-foreground/80 hover:text-cyan-600 transition-colors">
                   Our Clients
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                <Link href="/contact" className="text-primary-foreground/80 hover:text-cyan-600 transition-colors">
                   Contact
                 </Link>
               </li>
@@ -77,19 +77,19 @@ export function Footer() {
             <h3 className="font-semibold text-lg mb-4">Contact Info</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-accent" />
+                <Phone className="h-4 w-4 text-cyan-600" />
                 <span className="text-primary-foreground/80">+91 (934) 768824   </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4 text-accent" />
+                <Mail className="h-4 w-4 text-cyan-600" />
                 <span className="text-primary-foreground/80">info@personaelevator.com</span>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="h-4 w-4 text-accent" />
+                <MapPin className="h-4 w-4 text-cyan-600" />
                 <span className="text-primary-foreground/80">The Park,Muzaffarpur</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Clock className="h-4 w-4 text-accent" />
+                <Clock className="h-4 w-4 text-cyan-600" />
                 <span className="text-primary-foreground/80">24/7 Emergency Service</span>
               </div>
             </div>

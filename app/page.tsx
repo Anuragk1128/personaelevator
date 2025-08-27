@@ -54,8 +54,8 @@ export default function HomePage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <stat.icon className="h-8 w-8 text-accent" />
+                  <div className="w-16 h-16 bg-cyan-600/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <stat.icon className="h-8 w-8 text-cyan-600" />
                   </div>
                   <div className="text-3xl font-bold text-foreground mb-2">{stat.value}</div>
                   <div className="text-muted-foreground">{stat.label}</div>
@@ -83,23 +83,23 @@ export default function HomePage() {
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-3" />
+                    <div className="w-2 h-2 bg-cyan-600 rounded-full mr-3" />
                     <span>Certified and experienced technicians</span>
                   </li>
                   <li className="flex items-center">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-3" />
+                    <div className="w-2 h-2 bg-cyan-600 rounded-full mr-3" />
                     <span>24/7 emergency response service</span>
                   </li>
                   <li className="flex items-center">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-3" />
+                    <div className="w-2 h-2 bg-cyan-600 rounded-full mr-3" />
                     <span>Comprehensive maintenance programs</span>
                   </li>
                   <li className="flex items-center">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-3" />
+                    <div className="w-2 h-2 bg-cyan-600 rounded-full mr-3" />
                     <span>Full regulatory compliance</span>
                   </li>
                 </ul>
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
+                <Button size="lg" className="bg-cyan-600 hover:bg-cyan-600/90">
                   Learn More About Us
                 </Button>
               </div>
@@ -130,7 +130,7 @@ export default function HomePage() {
                   <CardHeader>
                     <div className="flex items-center space-x-1 mb-2">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+                        <Star key={i} className="h-4 w-4 fill-cyan-600 text-cyan-600" />
                       ))}
                     </div>
                     <CardTitle className="text-lg">{testimonial.name}</CardTitle>
@@ -148,10 +148,10 @@ export default function HomePage() {
         {/* CTA Section */}
         <section className="py-16 bg-black">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-4 text-balance">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 ">
               Ready to Get Started?
             </h2>
-            <p className="text-xl text-accent-foreground/80 mb-8 max-w-2xl mx-auto text-pretty">
+            <p className="text-xl text-white mb-8 max-w-2xl mx-auto text-pretty">
               Contact us today for a free consultation and quote for your lift service needs
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -161,9 +161,9 @@ export default function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-accent-foreground text-accent-foreground hover:bg-accent-foreground hover:text-accent bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-black bg-transparent"
               >
-                Call Now: (555) 123-4567
+                Call Now: (917) 123-4567
               </Button>
             </div>
           </div>

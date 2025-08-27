@@ -48,7 +48,7 @@ export function HeroCarousel() {
         <div className="embla__container flex">
           {slides.map((slide, index) => (
             <div key={index} className="embla__slide flex-[0_0_100%] min-w-0 relative">
-              <div className="relative h-[70vh] min-h-[500px] bg-gradient-to-r from-primary/20 to-accent/20">
+              <div className="relative h-[70vh] min-h-[500px] bg-gradient-to-r from-primary/20 to-cyan-600/20">
                 <img
                   src={slide.image || "/placeholder.svg"}
                   alt={slide.title}
@@ -59,7 +59,7 @@ export function HeroCarousel() {
                   <div className="max-w-2xl text-white">
                     <h1 className="text-4xl md:text-6xl font-bold mb-4 text-balance">{slide.title}</h1>
                     <p className="text-xl md:text-2xl mb-8 text-pretty opacity-90">{slide.subtitle}</p>
-                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                    <Button size="lg" className="bg-cyan-600 hover:bg-cyan-600/90 text-cyan-600-foreground">
                       {slide.cta}
                     </Button>
                   </div>
@@ -77,7 +77,7 @@ export function HeroCarousel() {
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full transition-all ${index === selectedIndex ? "bg-accent" : "bg-white/50"}`}
+            className={`w-3 h-3 rounded-full transition-all ${index === selectedIndex ? "bg-cyan-600" : "bg-white/50"}`}
             onClick={() => emblaApi?.scrollTo(index)}
           />
         ))}

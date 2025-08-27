@@ -83,8 +83,15 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline">Get Quote</Button>
-            <Button>Emergency Service</Button>
+            <Button
+              variant="outline"
+              className="border-cyan-600 text-cyan-600 hover:bg-cyan-600 hover:text-white"
+            >
+              Get Quote
+            </Button>
+            <Button className="hover:bg-cyan-600 hover:text-white">
+              Emergency Service
+            </Button>
           </div>
 
           {/* Mobile Navigation */}
@@ -108,10 +115,13 @@ export function Header() {
                     </Link>
                   ))}
                   <div className="flex flex-col space-y-2 pt-4 border-t">
-                    <Button variant="outline" className="w-full bg-transparent">
+                    <Button
+                      variant="outline"
+                      className="w-full bg-transparent border-cyan-600 text-cyan-600 hover:bg-cyan-600 hover:text-white"
+                    >
                       Get Quote
                     </Button>
-                    <Button className="w-full">Emergency Service</Button>
+                    <Button className="w-full hover:bg-cyan-600 hover:text-white">Emergency Service</Button>
                   </div>
                 </div>
               </SheetContent>
