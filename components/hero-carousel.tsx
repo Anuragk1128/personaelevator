@@ -4,7 +4,6 @@ import { useCallback, useEffect, useState } from "react"
 import useEmblaCarousel from "embla-carousel-react"
 import Autoplay from "embla-carousel-autoplay"
 import { Button } from "@/components/ui/button"
-import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const slides = [
   {
@@ -31,13 +30,6 @@ export function HeroCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000, stopOnInteraction: false })])
   const [selectedIndex, setSelectedIndex] = useState(0)
 
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev()
-  }, [emblaApi])
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext()
-  }, [emblaApi])
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return
@@ -78,23 +70,7 @@ export function HeroCarousel() {
         </div>
       </div>
 
-      {/* Navigation buttons */}
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-background/80 backdrop-blur"
-        onClick={scrollPrev}
-      >
-        <ChevronLeft className="h-4 w-4" />
-      </Button>
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-background/80 backdrop-blur"
-        onClick={scrollNext}
-      >
-        <ChevronRight className="h-4 w-4" />
-      </Button>
+      {/* Navigation buttons removed as requested */}
 
       {/* Dots indicator */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex space-x-2">

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Phone, Mail } from "lucide-react"
@@ -44,7 +45,7 @@ export function Header() {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
-              <span>+1 (555) 123-4567</span>
+              <span>+1 (934) 123-4567</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
@@ -56,14 +57,14 @@ export function Header() {
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="flex items-center space-x-2">
-            <div
-              className="h-8 w-8 rounded-lg flex items-center justify-center"
-              style={{ backgroundColor: atTop ? "rgba(255,255,255,0.9)" : undefined }}
-            >
-              <span className="font-bold text-lg" style={{ color: atTop ? "#111" : undefined }}>
-                E
-              </span>
-            </div>
+            <Image
+              src="/logo.svg"
+              alt="Persona Elevator logo"
+              width={48}
+              height={48}
+              className="h-16 w-16"
+              priority
+            />
             <span className="font-bold text-xl">Persona Elevator</span>
           </Link>
 

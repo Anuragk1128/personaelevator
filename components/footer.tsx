@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
 export function Footer() {
@@ -9,9 +10,14 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="h-8 w-8 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-lg">E</span>
-              </div>
+              <Image
+                src="/logo.svg"
+                alt="Persona Elevator logo"
+                width={48}
+                height={48}
+                className="h-16 w-16"
+                priority
+              />
               <span className="font-bold text-xl">Persona Elevator</span>
             </div>
             <p className="text-primary-foreground/80 mb-4 text-pretty">
